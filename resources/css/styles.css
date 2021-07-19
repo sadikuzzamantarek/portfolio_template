@@ -1,0 +1,516 @@
+* {
+	margin:  0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+section {
+    padding: 80px 0;
+}
+
+header {
+    background: #000;
+    padding: 22px 0;
+    margin-top: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100&display=swap');
+
+/*Header Section */
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Main Nav Start========================================================================================================= */
+
+nav {
+    /* background: black; */
+    height: 7vh;
+    /* margin-top: 20px; */
+    width: 100%;
+}
+
+.logo{
+    width: 125px;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main-nav {
+    float: right;
+    margin-top: 12px;
+    text-transform: uppercase;
+
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 7px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #3ea2d8;
+    text-decoration: none;
+    background: transparent;
+    padding: 0px 5px;
+    border-radius: 0.3rem;
+    transition: 0.3s;
+    display: inline-block;
+    font-size: 17px;
+
+
+}
+
+.iconHdr {
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+
+.main-nav li:first-child {
+    margin-left: 0px;
+}
+
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited {
+    color: tomato;
+}
+
+.active {
+    background: #643a79;
+    border-radius: 0.3rem;
+}
+
+/* Main Nav End========================================================================================================= */
+/* Hero Section Start======================================================================================= */
+#hero-box {
+    height: 550px;
+    background-image: url(img/hero-section.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text-box h1 {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.hero-text-box p {
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.hero-text-box h1:hover,
+.hero-text-box p:hover {
+    color: tomato;
+}
+
+.hero-btn {
+    color: white;
+    /* text-align: center; */
+    margin-left: 47%;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    margin-top: 200px;
+    display: inline-block;
+    background: #90511B;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-btn:hover {
+    color: whitesmoke;
+    animation: firespark 1ms infinite;
+    background: #FB7C2D;
+    cursor: pointer;
+    /* cursor: hand; */
+    box-shadow: 0 0 45em #ff5e00;
+}
+
+@keyframes firespark {
+    0% {
+        box-shadow: 0 0 15em #eb1b08;
+    }
+
+    50% {
+        box-shadow: 0 0 5em #FB7C2D;
+    }
+
+    100% {
+        box-shadow: 0 0 3em #f7ae3b;
+    }
+}
+
+/* Hero Section Ends======================================================================================= */
+
+/* Services Section Start==================================================================================== */
+.services-section {
+    /* background-image: url(img/services-section.png); */
+    background: #171b20;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.services-section .row h2 {
+    color: #3ea2d8;
+    text-align: center;
+    font-size: 30px;
+}
+
+.little-description {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.services-section .row h2:hover,
+.little-description:hover {
+    color: tomato;
+}
+
+#services i {
+    font-size: 100px;
+    color: white;
+    /* line-height: 10px; */
+}
+
+#services i:hover {
+    color: #3ea2d8;
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+.services-section h3 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 70px;
+}
+
+.services-section h3:hover {
+    color: tomato;
+    cursor: pointer;
+}
+
+.services-section .col p {
+    color: white;
+    text-align: center;
+}
+
+/* Services Section Ends==================================================================================== */
+/* Team Section Start============================================================== */
+
+.team-section {
+    /* background-image: url(img/team-section.png); */
+    background: #1f242b;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.team-section h2 {
+    color: #3ea2d8;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+}
+
+.team-section h2:hover {
+    color: tomato;
+}
+
+.team-member {
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+
+.team-section h3 {
+    color: #3ea2d8;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.team-section h3:hover {
+    color: tomato;
+}
+
+.role {
+    color: white;
+    display: block;
+    margin-top: 14px;
+    text-align: center;
+    line-height: 10px;
+}
+
+.role:hover {
+    color: tomato;
+}
+
+.team-section .col p {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Complicated One Social Link=============================================== */
+
+.social-link {
+    margin-top: 45px;
+}
+
+.social-link ul li i {
+
+    margin: 0 5px;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.social-link i {
+    color: #3ea2d8;
+    font-size: 25px;
+
+}
+
+.social-link i:hover {
+    color: tomato;
+    display: inline-block;
+    margin: 0 5px;
+    transform: rotate(360deg);
+    transition: 0.5s;
+    margin: 0 5px;
+    background: #bdd1df;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 10px;
+    background: #619bc5;
+}
+
+/* Complicated One Social Link=============================================== */
+
+.team-member {
+    margin-top: 45px;
+    margin-bottom: 35px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 0 90px;
+}
+
+/* Team Section End====================== */
+/* SKills Section Start ============Incomple*/
+
+.skill-section {
+    /* background-image: url(img/skill-section.png); */
+    background: #171b20;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.skill-section h2 {
+    color: #3ea2d8;
+    text-align: center;
+    font-size: 20px;
+}
+
+.skill-section h2:hover {
+    color: tomato;
+}
+
+.skill-section h3 {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+.skill-section h3:hover {
+    color: tomato;
+
+}
+
+
+
+
+.col svg.radial-progress {
+    width: 150px;
+    margin-left: 35%;
+}
+
+.col svg.radial-progress circle {
+    stroke-width: 5;
+}
+
+.col svg.radial-progress text {
+    fill: white;
+    font-size: 15px;
+}
+
+svg.web-design circle {
+    stroke: #30bae7 !important;
+}
+
+svg.html-css circle {
+    stroke: #d74680 !important;
+}
+
+svg.graphics-design circle {
+    stroke: #15c7a8 !important;
+}
+
+.social-link {
+    text-align: center;
+    margin-top: 19px;
+}
+
+
+
+/* SKills Section Start ============Incomple*/
+
+/* Testimonial Start=================== */
+#testimonial {
+    /* background: url(img/testimonial-section.png); */
+    background: #1f242b;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.testimonial-section h3 {
+    text-align: center;
+}
+
+.testimonial-section h2 {
+    text-align: center;
+    color: #3ea2d8;
+}
+
+/* .client-photo{
+    width: 100px;
+    float: left;
+} */
+.client-photo img {
+    margin-top: 45px;
+    margin-bottom: 35px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 0 90px;
+}
+
+.client-review {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.testimonial-section h3 {
+    color: #3ea2d8;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+
+}
+
+.testimonial-section h3:hover {
+    color: tomato;
+}
+
+.company {
+    color: white;
+    text-align: center;
+    line-height: 40px;
+}
+
+/* Testimonoial Ends */
+
+/* Contact Section Star */
+.contact-section {
+    background: #171b20;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contact-section h2 {
+    color: #3ea2d8;
+    text-align: center;
+}
+
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+    background: #1f242b;
+    border: 1px solid #273a71;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+}
+
+.contact-section input[type="email"] {
+    margin: 0px 20px;
+}
+
+.btn {
+    margin-left: 47%;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    margin-top: 20px;
+    display: inline-block;
+    background: #90511B;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.btn:hover {
+    color: whitesmoke;
+    animation: firespark 1ms infinite;
+    background: #FB7C2D;
+    cursor: pointer;
+    box-shadow: 0 0 45em #ff5e00;
+}
